@@ -2,9 +2,9 @@ package com.hello.design.pattern.facory;
 
 public class SimpleFactoryTest {
     public static void main(String[] args) {
-        SimpleFactory factory = new SimpleFactory();
-        Shape circle = factory.getShapeFactory("circle");
-        Shape square = factory.getShapeFactory("square");
+        ShapeFactory factory = new ShapeFactory();
+        Shape circle = factory.getShape("circle");
+        Shape square = factory.getShape("square");
         circle.draw();
         square.draw();
     }
